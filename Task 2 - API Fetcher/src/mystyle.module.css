@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+.App {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+* {
+    background-color: #f88243;
+
+}
+
+
+.Nav {
+    color: rgb(11, 16, 21);
+    padding: 40px;
+    font-family: Sans-Serif;
+    text-align: center;
+    display: flex;
+
+}
+
+.Titlehome {
+    /* flex-direction: row; */
+    margin: 5px;
+    text-decoration: underline;
+    font-weight: bold;
+    ;
+}
+
+.Titlecontact {
+    /* flex-direction: row; */
+    margin: 5px;
+    ;
+}
+
+.Titlehome:hover,
+.Titlecontact:hover,
+.Title1:hover {
+    font-weight: bold;
+    color: #d5e8eb;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.Title1 {
+    flex-direction: row;
+    margin-right: 70%;
+    padding-top: 5px;
+    font-size: 2rem;
+}
+
+
+
+.NavLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.Name {
+    background-color: #f88243;
+    margin: 2px;
+    color: #d5e8eb;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 3px 3px;
+    font-weight: bold;
+}
+
+.Nameo {
+
+    background-color: #f88243;
+    margin: 2px;
+    color: #d5e8eb;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 3px 3px;
+
+}
+
+.btn {
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 10px 14px -7px #276873;
+    padding-bottom: 2rem;
+}
+
+.bttn:hover {
+    background-color: #c69090;
+    color: #d5e8eb;
+    transition: 0.2s ease-in-out;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    /* background-color: #ab7c7c; */
+    text-decoration: underline;
+    color: #d5e8eb;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 3px 3px;
+    transition: 0.2s ease-in-out;
+
+}
+
+.link:hover,
+.Nameo:hover {
+    color: rgb(54, 33, 33);
+    transition: 0.2s ease-in-out;
+    cursor: pointer
+}
+
+.User {
+
+    text-align: center;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
