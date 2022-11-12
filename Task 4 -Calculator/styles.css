@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+*{
+    background-color:rgb(215, 191, 140);;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    margin:0;
+}
+
+.button {
+    width: 66px;
+    padding: 20px;
+    margin: 0 3px;
+    border: 2px solid black;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.button:hover, .input:hover {
+    background-color: #f1f1f1!important;
+    box-shadow: 5px 10px ;
+}
+
+.row {
+    margin: 8px 0;
+}
+
+.row input {
+    width: 291px;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 0px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.bg-red {
+    background: red;
+}
+
+.mx-auto {
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+#c{
+    background-color:rgb(181, 67, 67)!important;
+}
+#c:hover{
+    background-color:rgb(209, 75, 75)!important;
+}
+
+#R:hover{
+    background-color:rgb(194, 171, 171)!important;
+}
+
+#B:hover{
+    background-color:rgb(171, 192, 194)!important;
+}
+
+#Y:hover{
+    background-color:rgb(194, 194, 171)!important;
+}
+
+#G:hover{
+    background-color:rgb(171, 194, 174)!important;
+}
+
+
