@@ -1,0 +1,108 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-image: linear-gradient(to right, #f5f5f5, #f1caca);
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+    /* margin-left: 650px; */
+    margin-top: 5px;
+    position: relative;
+}
+
+
+.wrapper1 {
+    position: absolute;
+    top: 10%;
+    /* width: 400px */
+}
+.wrapper2{
+    position: absolute;
+    top: 85%;
+}
+
+.btn {
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    padding: 1px;
+    margin: 16px;
+}
+input[type="radio"]{
+    padding: 0.5px;
+    margin: 16px 5px;
+}
+
+
+
+
+header,
+.contactform {
+    display: flex;
+    flex-direction: row;
+}
+
+.contactform {
+    align-items: center;
+    margin-left: 60%;
+}
+
+.home,
+.contact,
+.register,
+.about {
+    margin: 10px;
+}
+
+.register {
+    text-decoration: underline;
+    color: rgb(213, 111, 111);
+
+}
+
+#Hack{
+    color: rgb(213, 111, 111);
+}
+
+h1, #Hack{
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.home:hover,
+.contact:hover,
+.register:hover,
+.about:hover {
+    color: rgb(151, 81, 81);
+    text-decoration: underline;
+    transition: all 0.15s ease;
+    cursor: pointer;
+}
+
+h1:hover{
+    color: rgb(91, 35, 35);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.wrapper2 #Reg{
+    color: green;
+    background-color: rgba(0, 128, 0, 0.132);
+    font-weight: bold;
+    /* border: 1px solid rgb(34, 93, 93); */
+}

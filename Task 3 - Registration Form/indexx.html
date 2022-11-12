@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Poppins:wght@200;300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="stylee.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Apply for <span id="Hack">Hack</span>Fest</h1>
+        <div class="contactform">
+            <div class="home">Home </div>
+            <div class="register">Register</div>
+            <div class="contact">Contact</div>
+            <div class="about">About</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="wrapper1">
+            <form action="PayslipServlet" method="get">
+                First name: <input type="text" name="fname" id="fname"><br />
+                Last name: <input type="text" name="lname" id="lname"><br />
+                School/Institution: <input type="text" name="school" id="school"><br />
+                Phone Number: <input type="tel" name="phone" id="phone"><br />
+                Email name: <input type="email" name="email" id="email"><br />
+
+
+                Date : <input type="radio" name="date" id="date" value="3">
+                <label for="date">3 Nov</label>
+                <input type="radio" name="date" id="date" value="4">
+                <label for="date">4 Nov</label><br />
+
+
+                Location : <input type="radio" name="Location" id="Location" value="Kolkata">
+                <label for="Location">Kolkata</label>
+                <input type="radio" name="Location" id="Location" value="Chennai">
+                <label for="Location">Chennai</label>
+                <input type="radio" name="Location" id="Location" value="Delhi">
+                <label for="Location">Delhi</label><br />
+
+                <div class="btn">
+                    <input type="button" value="Submit" onClick="writeValues(form)">
+                </div>
+            </form>
+        </div>
+
+
+
+        <div class="wrapper2">
+            <div id="Reg" style=" width: 300px;  text-align: center; "></div><br>
+            <span id="fnamee"></span><br /><br />
+            <span id="lnamee"></span><br /><br />
+            <span id="schooll"></span><br /><br />
+            <span id="emaill"></span><br /><br />
+            <span id="phonee"></span><br /><br />
+            <div id="result"></div>
+            <div id="result2"></div>
+            <div id="UID"></div><br>
+            <h4 id="UID2"></h4><br>
+            
+            <br>
+            <br>
+        </div>
+
+        
+
+
+    </div>
+</body>
+
+<script>
+    window.writeValues = function (form) {
+
+        document.getElementById('Reg').innerHTML = 'Registration is Successfull! Here is your details.';
+        document.getElementById('UID').innerHTML = 'Your Unique ID is : ' + Math.floor(Math.random() * 1000000000) ;
+        document.getElementById('UID2').innerHTML = 'Verify this at the Event Venue ' ;
+        var fname = form.fname.value;
+        var lname = form.lname.value;
+        var school = form.school.value;
+        var phone = form.phone.value;
+        var email = form.email.value;
+        document.getElementById('fnamee').innerHTML = 'First Name: ' + fname;
+        document.getElementById('lnamee').innerHTML = 'Last Name: ' + lname;
+        document.getElementById('schooll').innerHTML = 'School: ' + school;
+        document.getElementById('phonee').innerHTML = 'Phone: ' + phone;
+        document.getElementById('emaill').innerHTML = 'Email: ' + email;
+
+
+
+        var ele = document.getElementsByName('date');
+
+        for (i = 0; i < ele.length; i++) {
+            if (ele[i].checked)
+                document.getElementById("result").innerHTML = "Date Selected: " + ele[i].value;
+        }
+
+
+        var ele2 = document.getElementsByName('Location');
+
+        for (i = 0; i < ele2.length; i++) {
+            if (ele2[i].checked)
+                document.getElementById("result2").innerHTML = "Date Selected: " + ele2[i].value;
+        }
+    }
+</script>
+
+</html>
